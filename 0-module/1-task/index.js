@@ -4,9 +4,10 @@
  * @param {number} n index
  * @returns {number}
  */
-function sum (m, n) {
-  if ( isNaN(parseFloat(m)) || isNaN(parseFloat(n)) || !isFinite(m) || !isFinite(n) ){
-    return ('Error: not numeric.')
+function sum(m, n) {
+  if (Number.isNaN(parseFloat(m)) || Number.isNaN(parseFloat(n)) || !Number.isFinite(m) || !Number.isFinite(n)) {
+    return ('Error: not numeric.');
   }
-  return (m + n)
+  return (m + n);
 }
+sum(1, 2);
