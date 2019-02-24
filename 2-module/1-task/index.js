@@ -14,7 +14,7 @@ function clone(obj) {
       if (typeof (obj[key]) !== 'object' || obj[key] === null) {
         obj1[key] = obj[key];
       } else { // если не примитив для этого значения вызываем РЕКУРСИЮ!!!!!11
-        console.log('key =', key, typeof (key));
+        сonsole.log('key =', key, typeof (key));
         obj1[key] = clone(obj[key]);
       }
     }
