@@ -4,10 +4,21 @@
  * @param {number} n index
  * @returns {number}
  */
-function sum(m, n) {
+
+function pow(m, n) {
   if (Number.isNaN(parseFloat(m)) || Number.isNaN(parseFloat(n)) || !Number.isFinite(m) || !Number.isFinite(n)) {
     return ('Error: not numeric.');
   }
-  return (m + n);
+  if (n < 0) {
+    return ('Error: not numeric.');
+  }
+  let a = 1;
+  if (n === 0) {
+    return a;
+  }
+  for (let i = 0; i < n; i += 1) {
+    a *= m;
+  }
+  return a;
 }
-sum(3, 2);
+pow(2, 3);
