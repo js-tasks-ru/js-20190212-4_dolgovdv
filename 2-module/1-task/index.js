@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-syntax */
 /**
- * Клонируем объект.
+ * Клонируем объект
  * @param {Object} obj - клонируем объект
  * @returns {Object}
  *  */
